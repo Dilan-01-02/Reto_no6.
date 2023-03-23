@@ -1,4 +1,4 @@
-# Identificación del número mayor 
+# Función para identificar el número mayor 
 def Mayor(a:float,b:float,c:float,d:float,e:float) -> float:
     if a>b:
         mayor=a
@@ -18,7 +18,7 @@ def Mayor(a:float,b:float,c:float,d:float,e:float) -> float:
         mayor=e
     return mayor
 
-# Identificación del número menor 
+# Función para identificar el número menor 
 def Menor(a:float,b:float,c:float,d:float,e:float) -> float:
     if a<b:
         menor=a
@@ -38,7 +38,7 @@ def Menor(a:float,b:float,c:float,d:float,e:float) -> float:
         menor=e
     return menor
 
-# Identificación de los números que no son ni mayor ni menor 
+# Función para identificar los números que no son mayor ni menor 
 def intermedioUno(a:float,b:float,c:float,d:float,e:float) -> float:
     mayor = Mayor(a,b,c,d,e)
     menor = Menor(a,b,c,d,e)
@@ -88,7 +88,7 @@ def intermedioTres(a:float,b:float,c:float,d:float,e:float) -> float:
         medio3 = e
     return medio3
 
-# Identificación del número siguiente de forma ascendente a menor
+# Función para identificar el número siguiente de forma ascendente menor
 def primerMedio(a:float,b:float,c:float,d:float,e:float) -> float:
     medio1 = intermedioUno(a,b,c,d,e)
     medio2 = intermedioDos(a,b,c,d,e)
@@ -103,7 +103,7 @@ def primerMedio(a:float,b:float,c:float,d:float,e:float) -> float:
         m1=medio3
     return m1
 
-# Identificación del número siguiente de forma descendente a mayor 
+# Función para identificar el número siguiente de forma descendente mayor
 def tercerMedio(a:float,b:float,c:float,d:float,e:float) -> float:
     medio1 = intermedioUno(a,b,c,d,e)
     medio2 = intermedioDos(a,b,c,d,e)
@@ -118,7 +118,7 @@ def tercerMedio(a:float,b:float,c:float,d:float,e:float) -> float:
         m3=medio3
     return m3
 
-# Identificación del número faltante (el de la mitad) 
+# Función para identificar el número faltante (el de la mitad)
 def segundoMedio(a:float,b:float,c:float,d:float,e:float) -> float:
     mayor = Mayor(a,b,c,d,e)
     menor = Menor(a,b,c,d,e)

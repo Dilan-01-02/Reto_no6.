@@ -1,10 +1,14 @@
+# Importación de las funciones 
 from Ordenamiento_de_numeros import *
 from Promedio import *
 from Promedio_multiplicativo import *
 from Potencia_del_mayor_al_menor import *
 from Raiz_cubica_menor import *
 
+# Función principal
 if __name__ == "__main__":
+
+    # Declaración e ingreso de variables
     a = float(input("Ingrese el primer número: "))
     b = float(input("Ingrese el segundo número: "))
     c = float(input("Ingrese el tercer número: "))
@@ -12,6 +16,7 @@ if __name__ == "__main__":
     e = float(input("Ingrese el quinto número: "))
     print("\n")
 
+    # Llamado de las funciones
     prom = promedio(a,b,c,d,e)
     pmult = promMulti(a,b,c,d,e)
     mayor = Mayor(a,b,c,d,e)
@@ -22,6 +27,7 @@ if __name__ == "__main__":
     potMayorMenor = potenciaMayorAlMenor(a,b,c,d,e)
     raizCubica = raizCubicaMenor(a,b,c,d,e)
 
+    # Impresión de los resultados
     print("El promedio de los números ingresados es: "+str(prom)+ "\n")
     print("La mediana de los números ingresados es: " +str(m2)+ "\n")
     print("El promedio multiplicativo de los números ingresados es: " +str(pmult)+ "\n")
